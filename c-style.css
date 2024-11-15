@@ -1,0 +1,360 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #2B7A78;
+    color: #17252A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    overflow-x: hidden;
+}
+/* Dropdown menu styling */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: flex; /* Change from "none" to "flex" to show the menu on hover */
+}
+
+/* Optional: Smooth dropdown transition */
+.dropdown-menu {
+    transition: opacity 10s ease;
+    opacity: 0;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    opacity: 10;
+}
+
+/* Custom styling for horizontal scroll in the dropdown menu */
+#basic-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    height: 300px;
+    white-space: nowrap;
+}
+
+#basic-container .menulists {
+    min-width: 200px;
+}
+
+.dropdown-menu::-webkit-scrollbar {
+    height: 6px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #3AAFA9;
+    color: #FEFFFF;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo img {
+    height: 50px;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #FEFFFF;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+.navbar {
+    display: flex;
+    list-style-type: none;
+    background-color: #4db6ac;
+    padding: 15px;
+    margin: 0;
+    justify-content: space-around;
+  }
+.navbar li {
+    position: relative;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+.navbar a:hover {
+    color: #cce7e8;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px; /* Adjust the position of the dropdown */
+    left: 0;
+    background-color: #3AAFA9;
+    padding: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    white-space: nowrap;
+    width: 300px; /* Adjust the width if needed */
+}
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #333;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+  
+  .dropdown-content a:hover {
+    background-color: #17252A;
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.header nav a:hover {
+    color: #DEF2F1;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #DEF2F1;
+    width: 100%;
+}
+
+.search-bar {
+    width: 350px;
+    padding: 12px;
+    border: 1px solid #2B7A78;
+    border-radius: 5px;
+    background-color: #FEFFFF;
+    color: #17252A;
+}
+
+.search-btn {
+    padding: 12px 25px;
+    background-color: #17252A;
+    color: #FEFFFF;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #2B7A78;
+}
+
+/* Articles Container */
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 50fr));
+    gap: 60px;
+    padding: 20px;
+    width: 150%;
+    max-width: 1200px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #FEFFFF;
+    border: 1px solid #DEF2F1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 100%; /* Increased height to fit content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;
+    flex-grow: 1;
+    right: 100px;
+
+}
+
+.card img {
+    width: 100%;
+    height: 260px; 
+    margin-bottom: 5px;
+}
+
+.card-content {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    color: #2B7A78;
+    margin-bottom: 100%;
+    margin-top: 100px;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: #17252A;
+    margin-bottom: auto; /* Adjusts spacing between content and button */
+    height: 120px; /* Fixed height for content area to maintain consistency */
+    overflow: hidden; /* Ensure long content doesn’t overflow */
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #2B7A78;
+    color: #FEFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+    width: fit-content;
+    margin: 0 auto 10px; /* Center button and add spacing from bottom */
+}
+.card-body h3 {
+    margin-bottom: 5px;  /* Reduces space between the heading and the next element */
+    font-size: 1.25rem;   /* Adjust font size if necessary */
+    font-weight: bold;    /* Optional: Make heading bold */
+}
+
+.card-body .post-slider {
+    
+    margin-bottom: 15px;  /* Adjust gap between the image and heading */
+}
+
+.card-body p {
+    margin-top: 10px;
+    margin-bottom: 15px;  /* Increase space between paragraph and "View more" button */
+}
+
+
+
+
+.btn:hover {
+    background-color: #17252A;
+}
+
+
+
+/* Body Diagram Section */
+.body-diagram {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.gender-select button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 20px;
+    color: #17252A;
+    cursor: pointer;
+}
+
+.gender-select button:hover {
+    background-color: #FEFFFF;
+}
+
+.gender-select #men-btn.selected, 
+.gender-select #women-btn.selected {
+    background-color: #3AAFA9;
+    color: #17252A;
+}
+
+.diagram-container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Footer */
+/* Add this to your CSS file (c-style.css) */
+
+/* Footer styling */
+footer {
+    padding: 20px 0;
+    background-color: #17252A;
+    color: #FEFFFF;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10%;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* Container for the footer content to align text and social links in a row */
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+/* Social links in a row */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+/* Ensure the social icons have appropriate sizing */
+.social-links img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

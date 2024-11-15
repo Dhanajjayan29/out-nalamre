@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2B7A78;
+    color: #17252A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #3AAFA9;
+    color: #FEFFFF;
+    width: 100%;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FEFFFF;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #DEF2F1;
+    width: 100%;
+}
+
+.search-bar {
+    width: 350px;
+    padding: 12px;
+    border: 1px solid #2B7A78;
+    border-radius: 5px;
+    background-color: #FEFFFF;
+    color: #17252A;
+}
+
+.search-btn {
+    padding: 12px 25px;
+    background-color: #17252A;
+    color: #FEFFFF;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Column-based layout */
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+.card {
+    background-color: #FEFFFF;
+    border: 1px solid #DEF2F1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 20px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #2B7A78;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: #17252A;
+    margin-bottom: 15px;
+}
+
+
+.body-diagram {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.gender-select button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2B7A78; /* Dark teal */
+    color: #FEFFFF; /* White */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.gender-select button:hover {
+    background-color: #17252A; /* Dark blue */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Selected button styles */
+.gender-select #men-btn.selected, .gender-select #women-btn.selected {
+    background-color: #3AAFA9; /* Light teal */
+    color: #17252A; /* Dark text */
+}
+
+.diagram-container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.btn {
+    padding: 10px 15px;
+    background-color: #2B7A78;
+    color: #FEFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.post-slider img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.footer {
+    padding: 20px 0;
+    background-color: #17252A;
+    width: 100%;
+}
+
+.footer hr {
+    margin-top: 20px;
+    border-top: 1px solid #17252A;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .col-md-3 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer .footer-list {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 0;
+    justify-content: flex-end;
+}
+
+.footer .footer-list .list-inline-item a img {
+    width: 32px;
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .footer-list {
+        justify-content: center;
+    }
+
+    .articles-container {
+        grid-template-columns: 1fr;
+    }
+}

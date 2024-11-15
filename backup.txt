@@ -1,0 +1,48 @@
+<div class="slider">
+  <div class="slide-track">
+  
+      <div class="slide">
+      <a href="diabetes-and-blood-pressure-connection-complications-risks.html"><img src="https://nalamaree.com/api/public/storage/files/i5.png.webp" alt=""></a>
+    </div>
+    <div class="slide">
+      <a href="risk-of-frequent-use-of-pain-killer.html"><img src="https://nalamaree.com/api/public/storage/files/i6.png.webp" alt=""></a>
+    </div>
+    <div class="slide">
+      <a href="steriod-boon-or-bane-.html"><img src="https://nalamaree.com/api/public/storage/files/i7.png.webp" alt=""></a>
+    </div>
+    <div class="slide">
+      <a href="are-we-misusing-antibiotics-and-risking-our-life-.html"><img src="https://nalamaree.com/api/public/storage/files/i8.png.webp" alt=""></a>
+    </div>
+    <div class="slide">
+      <a href="vaccine-know-the-fact.html"><img src="https://nalamaree.com/api/public/storage/files/i9.png.webp" alt=""></a>
+    </div>
+    <div class="slide">
+      <a href="must-know-medical-terms.html"><img src="https://nalamaree.com/api/public/storage/files/i10.png.webp" alt=""></a>
+    </div>
+    <div class="slide">
+      <a href="can-diabetes-be-reversed.html"><img src="https://nalamaree.com/api/public/storage/files/i11.png.webp" alt=""></a>
+    </div>
+    <div class="slide">
+      <a href="cold-and-cough-medicines-for-kids-whats-the-risk.html"><img src="https://nalamaree.com/api/public/storage/files/i12.png.webp" alt=""></a>
+    </div>
+    <div class="slide">
+      <a href="medical-facts-everyone-should-know.html"><img src="https://nalamaree.com/api/public/storage/files/i13.png.webp" alt=""></a>
+    </div>
+    <div class="slide">
+      <a href="allopathy-vs-homeopathy-vs-ayurvedhasiddha.html"><img src="https://nalamaree.com/api/public/storage/files/i14.png.webp" alt=""></a>
+    </div>
+    <div class="slide">
+      <a href="is-ro-water-good-or-bad-for-health.html"><img src="https://nalamaree.com/api/public/storage/files/i15.png.webp" alt=""></a>
+    </div>
+    <div class="slide">
+      <a href="list-of-banned-medicine.html"><img src="https://nalamaree.com/api/public/storage/files/i16.png.webp" alt=""></a>
+    </div>
+    <div class="slide">
+      <a href="medicine-not-to-be-given-for-newborn-children.html"><img src="https://nalamaree.com/api/public/storage/files/i17.png.webp" alt=""></a>
+    </div>
+    <div class="slide">
+      <a href="know-what-is-branded-and-generic-medicine.html"><img src="https://nalamaree.com/api/public/storage/files/i18.png.webp" alt=""></a>
+    </div>
+    
+  </div>
+</div>

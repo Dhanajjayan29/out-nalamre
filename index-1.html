@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Information Portal</title>
+    <link rel="stylesheet" href="c-style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="assets/images/nalamaree-logo.png"  alt="logo">
+        </div>
+        <nav>
+            <ul class="navbar">
+              <li><a href="index-1.html">Home</a></li>
+              <li><a href="infopage.html">Useful Information</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Disease</a>
+                <div class="dropdown-content">
+                    <a href="./disease1/skin disease/skin-disease_new.html">Skin Disease</a>
+                  <a href="#">Common Disease</a>
+                  <a href="#">Rare Disease</a>
+                  <a href="#">Infectious Disease</a>
+                  <a href="#">Lung Disease</a>
+                  <a href="#">Heart Disease</a>
+                  <a href="#">Diabetes</a>
+                  <a href="#">Cancer</a>
+                  <a href="#">Kidney Disease</a>
+                  <a href="#">Bone & Joint Disease</a>
+                  <a href="#">Eye Disease</a>
+                  <a href="#">Gastrointestinal Disease</a>
+                  <a href="#">Nerve Disease</a>
+                  <a href="#">Mental Illness</a>
+                  <a href="#">Hormone Disorder</a>
+                  <a href="#">Genetic Disorder</a>
+                  <a href="#">All Disease</a>
+                </div>
+              </li>
+              <li><a href="#">Myths & Facts</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </nav>
+          
+    </header>
+
+    <section class="search-section">
+        <input type="text" placeholder="Search Disease" class="search-bar">
+        <button class="search-btn">Search</button>
+    </section>
+
+    <section class="body-diagram">
+        <div class="gender-select">
+            <button id="men-btn">Men</button>
+            <button id="women-btn">Women</button>
+        </div>
+        <div class="diagram-container">
+            <img id="body-image" src="./img/hman.png" alt="Human Body Diagram">
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Nalamaree. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><img src="icon/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="icon/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="icon/whatsapp.svg" alt="WhatsApp"></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for swapping images -->
+    <script>
+        const menBtn = document.getElementById('men-btn');
+        const womenBtn = document.getElementById('women-btn');
+        const bodyImage = document.getElementById('body-image');
+
+        const menImagePath = './img/hman.png';
+        const womenImagePath = './img/hf.png';
+
+        menBtn.addEventListener('click', () => { bodyImage.src = menImagePath; });
+        womenBtn.addEventListener('click', () => { bodyImage.src = womenImagePath; });
+    </script>
+</body>
+</html>
