@@ -1,0 +1,414 @@
+/* ====================
+   Global Styles
+==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:  #2B7A78;
+    color: #333;
+    margin: 0;  
+    padding: 0;
+    line-height: 1.6;
+}
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ====================
+   Header Styles
+==================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #3AAFA9;
+    color: #FEFFFF;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo img {
+    height: 50px;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #FEFFFF;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+.navbar {
+    display: flex;
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+    justify-content: space-around;
+  }
+.navbar li {
+    position: relative;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+.navbar a:hover {
+    color: #cce7e8;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px; /* Adjust the position of the dropdown */
+    left: 0;
+    background-color: #3AAFA9;
+    padding: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    white-space: nowrap;
+    width: 300px; /* Adjust the width if needed */
+}
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #333;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+  
+  .dropdown-content a:hover {
+    background-color: #17252A;
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.header nav a:hover {
+    color: #DEF2F1;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    text-align: center;
+}
+
+.search-bar {
+    width: 350px;
+    padding: 12px;
+    border: 1px solid #2B7A78;
+    border-radius: 5px;
+    background-color: #FEFFFF;
+    color: #17252A;
+}
+
+.search-btn {
+    padding: 12px 25px;
+    background-color: #17252A;
+    color: #FEFFFF;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #2B7A78;
+}
+
+/* ====================
+   Main Content Section Styles
+==================== */
+.container {
+    max-width:650px; /* Reduced the container width */
+    margin: 0 auto;
+    padding: 12px; /* Reduced padding */
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.article-box {
+    background-color: #FFFFFF;
+    border-radius: 8px; /* Reduced border radius */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow */
+    overflow: hidden;
+    padding: 15px; /* Reduced padding */
+}
+
+.article-header {
+    position: relative;
+}
+
+.article-banner {
+    width: 100%; /* Full width of the container */
+    max-height: 670px; /* Max height to maintain proportion */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    border-radius: 2px; /* Slight rounding for a clean look */
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.card {
+    background-color: #FEFFFF;
+    border: 1px solid #DEF2F1;
+    border-radius: 4px; /* Reduced border radius */
+    overflow: hidden;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 8px; /* Reduced padding */
+    max-width: 220px;/* Further reduced max width of the card */
+}
+
+
+
+/* ====================
+   Card Content Styles
+==================== */
+.card-content {
+    padding: 4px; /* Reduced padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-content h3 {
+    font-size: 0.85rem; /* Further reduced font size of the card title */
+    color: #2B7A78;
+    margin-top: 4px; /* Reduced margin */
+}
+
+.card-content p {
+    font-size: 0.7rem; /* Further reduced font size for the description */
+    color: #17252A;
+    margin-top: 4px; /* Reduced margin */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+
+.article-header h1 {
+    font-size: 2rem; /* Reduced font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 8px; /* Reduced padding */
+}
+.card-body h3 {
+    font-size: 1.1rem;
+}
+
+.search-bar {
+    font-size: 1rem;
+}
+.search-btn:hover {
+    background-color: #2B7A78;
+    transform: scale(1.05);
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.article-content {
+    margin-top: 15px;
+    color: #333;
+}
+
+.article-content p {
+    font-size: 1rem; /* Reduced font size */
+    line-height: 1.6;
+    color: #555;
+}
+
+.text-muted {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.section-heading {
+    font-size: 1.6rem; /* Reduced font size */
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 15px; /* Reduced margin-bottom */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1rem; /* Reduced font size */
+    margin-bottom: 12px; /* Reduced margin */
+}
+
+ul li b {
+    color: #333;
+    font-weight: 600;
+}
+
+/* ====================
+   Footer Styles
+==================== */
+footer {
+    padding: 15px 0; /* Reduced padding */
+    background-color: #17252A;
+    color: #FEFFFF;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: 8px; /* Reduced margin */
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; /* Reduced max width */
+    padding: 0 15px; /* Reduced padding */
+    gap: 15px; /* Reduced gap */
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 12px; /* Reduced gap */
+}
+
+.social-links img {
+    width: 28px; /* Reduced size of icons */
+    height: 28px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover img {
+    transform: scale(1.1);
+}
+
+/* ====================
+   Responsive Styles
+==================== */
+@media (max-width: 768px) {
+    .article-header h1 {
+        font-size: 1.8rem; /* Reduced font size */
+    }
+
+    .article-content p {
+        font-size: 0.9rem; /* Reduced font size */
+    }
+
+    .section-heading {
+        font-size: 1.4rem; /* Reduced font size */
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .article-box {
+        padding: 10px; /* Reduced padding */
+    }
+
+    .article-content ul li {
+        font-size: 0.9rem; /* Reduced font size */
+    }
+
+    .header nav ul {
+        flex-direction: column;
+        gap: 12px; /* Reduced gap */
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .articles-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Reduced min size of cards */
+        gap: 8px; /* Reduced gap between cards */
+        padding: 8px; /* Reduced padding */
+        width: 100%;
+        max-width: 800px; /* Further reduced max width */
+        margin: 0 auto;
+    }
+
+    .header nav {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-bar {
+        width: 85%; /* Reduced width */
+    }
+
+    .search-btn {
+        margin-left: 5px;
+        padding: 8px 12px; /* Reduced padding */
+    }
+}

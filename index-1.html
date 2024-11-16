@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nalamaree</title>
+        <script src="/inject.js"></script>
+        <link rel="stylesheet" href="c-style.css">
+    </head>
+<body>
+    <!-- Header Section -->
+ 
+
+    <section class="search-section">
+        <script src="./search.js"></script>
+        <input type="text" id="searchInput" placeholder="Search Disease" class="search-bar">
+        <button class="search-btn" onclick="searchDisease()">Search</button>
+    </section>
+    
+    <section class="body-diagram">
+        <div class="gender-select">
+            <button id="men-btn">Men</button>
+            <button id="women-btn">Women</button>
+        </div>
+        <div class="diagram-container">
+            <img id="body-image" src="./img/hman.png" alt="Human Body Diagram">
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+   
+
+    <!-- JavaScript for swapping images -->
+    <script>
+        const menBtn = document.getElementById('men-btn');
+        const womenBtn = document.getElementById('women-btn');
+        const bodyImage = document.getElementById('body-image');
+
+        const menImagePath = './img/hman.png';
+        const womenImagePath = './img/hf.png';
+
+        menBtn.addEventListener('click', () => { bodyImage.src = menImagePath; });
+        womenBtn.addEventListener('click', () => { bodyImage.src = womenImagePath; });
+    </script>
+</body>
+</html>
