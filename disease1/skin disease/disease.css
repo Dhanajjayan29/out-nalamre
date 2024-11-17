@@ -12,11 +12,16 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     color: #333;
+<<<<<<< HEAD
     margin: 0;  
+=======
+    margin: 0;
+>>>>>>> d44263146acf3fceff066c80cfac4db12e43adbc
     padding: 0;
     line-height: 1.6;
 }
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
@@ -29,6 +34,8 @@ body {
     }
 }
 
+=======
+>>>>>>> d44263146acf3fceff066c80cfac4db12e43adbc
 /* ====================
    Header Styles
 ==================== */
@@ -106,7 +113,11 @@ body {
    Main Content Section Styles
 ==================== */
 .container {
+<<<<<<< HEAD
     max-width: 650px; /* Reduced the container width */
+=======
+    max-width:650px; /* Reduced the container width */
+>>>>>>> d44263146acf3fceff066c80cfac4db12e43adbc
     margin: 0 auto;
     padding: 12px; /* Reduced padding */
 }
@@ -129,7 +140,11 @@ body {
 }
 
 .article-banner {
+<<<<<<< HEAD
     width: 100%; /* Full width of the container */
+=======
+    width: auto; /* Full width of the container */
+>>>>>>> d44263146acf3fceff066c80cfac4db12e43adbc
     max-height: 670px; /* Max height to maintain proportion */
     object-fit: cover; /* Ensures the image fills the area without distortion */
     border-radius: 2px; /* Slight rounding for a clean look */
@@ -161,11 +176,20 @@ body {
     max-width: 220px;/* Further reduced max width of the card */
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d44263146acf3fceff066c80cfac4db12e43adbc
 /* ====================
    Card Content Styles
 ==================== */
 .card-content {
+<<<<<<< HEAD
     padding: 4px; /* Reduced padding */
+=======
+    padding: 4px;
+>>>>>>> d44263146acf3fceff066c80cfac4db12e43adbc
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -187,6 +211,10 @@ body {
     -webkit-box-orient: vertical;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d44263146acf3fceff066c80cfac4db12e43adbc
 .article-header h1 {
     font-size: 2rem; /* Reduced font size */
     font-weight: bold;
@@ -195,6 +223,7 @@ body {
     padding: 0 8px; /* Reduced padding */
 }
 
+<<<<<<< HEAD
 .card-body h3 {
     font-size: 1.1rem;
 }
@@ -213,6 +242,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+=======
+>>>>>>> d44263146acf3fceff066c80cfac4db12e43adbc
 .article-content {
     margin-top: 15px;
     color: #333;
@@ -352,6 +383,7 @@ footer p {
 }
 
 @media (max-width: 480px) {
+<<<<<<< HEAD
     .header {
         padding: 12px; /* Further reduced padding */
     }
@@ -403,5 +435,14 @@ footer p {
 
     .header .logo img {
         height: 30px; /* Further reduced logo size */
+=======
+    .search-bar {
+        width: 85%; /* Reduced width */
+    }
+
+    .search-btn {
+        margin-left: 5px;
+        padding: 8px 12px; /* Reduced padding */
+>>>>>>> d44263146acf3fceff066c80cfac4db12e43adbc
     }
 }
